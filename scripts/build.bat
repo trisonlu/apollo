@@ -1,22 +1,23 @@
 @echo off
 
 rem apollo config db info
-set apollo_config_db_url="jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8"
+set apollo_config_db_url="jdbc:mysql://212.64.51.173:3250/ApolloConfigDB?characterEncoding=utf8"
 set apollo_config_db_username="root"
-set apollo_config_db_password=""
+set apollo_config_db_password="aI&9x$nYc7o#8f"
 
 rem apollo portal db info
-set apollo_portal_db_url="jdbc:mysql://localhost:3306/ApolloPortalDB?characterEncoding=utf8"
+set apollo_portal_db_url="jdbc:mysql://212.64.51.173:3250/ApolloPortalDB?characterEncoding=utf8"
 set apollo_portal_db_username="root"
-set apollo_portal_db_password=""
+set apollo_portal_db_password="aI&9x$nYc7o#8f"
 
 rem meta server url, different environments should have different meta server addresses
-set dev_meta="http://localhost:8080"
-set fat_meta="http://someIp:8080"
-set uat_meta="http://anotherIp:8080"
-set pro_meta="http://yetAnotherIp:8080"
+set dev_meta="http://212.64.51.173:9999"
+rem set fat_meta="http://someIp:8080"
+rem set uat_meta="http://anotherIp:8080"
+rem set pro_meta="http://yetAnotherIp:8080"
 
-set META_SERVERS_OPTS=-Ddev_meta=%dev_meta% -Dfat_meta=%fat_meta% -Duat_meta=%uat_meta% -Dpro_meta=%pro_meta%
+rem set META_SERVERS_OPTS=-Ddev_meta=%dev_meta% -Dfat_meta=%fat_meta% -Duat_meta=%uat_meta% -Dpro_meta=%pro_meta%
+set META_SERVERS_OPTS=-Ddev_meta=%dev_meta%
 
 rem =============== Please do not modify the following content =============== 
 rem go to script directory
